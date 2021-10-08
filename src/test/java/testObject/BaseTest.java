@@ -1,12 +1,12 @@
-package test;
+package testObject;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
-import pages.SeleniumDevPage;
-import pages.SeleniumDocumentationPage;
+import pagesObject.SeleniumDevPage;
+import pagesObject.SeleniumDocumentationPage;
 
 public class BaseTest {
 

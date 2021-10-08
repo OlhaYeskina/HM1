@@ -1,4 +1,4 @@
-package test;
+package testObject;
 
 import org.testng.annotations.Test;
 import static org.testng.Assert.assertEquals;
@@ -69,8 +69,8 @@ public class SeleniumDocumentationPageTest extends BaseTest{
         getSeleniumDevPage().clickDocumentationButton();
         getSeleniumDocumentationPage().clickOnJavaButton();
 
-        System.out.println(getSeleniumDocumentationPage().CodeTextJava());
-        assertEquals(getSeleniumDocumentationPage().CodeTextJava(),EXPECTED_JAVA_CODE);
+//        System.out.println(getSeleniumDocumentationPage().CodeTextJavaInHtml());
+        assertEquals(getSeleniumDocumentationPage().CodeTextJavaInHtml(),EXPECTED_JAVA_CODE);
     }
 
 
@@ -79,7 +79,7 @@ public class SeleniumDocumentationPageTest extends BaseTest{
         getSeleniumDevPage().clickDocumentationButton();
         getSeleniumDocumentationPage().clickOnPythonButton();
 
-        assertEquals(getSeleniumDocumentationPage().CodeTextPython(),EXPECTED_PYTHON_CODE);
+        assertEquals(getSeleniumDocumentationPage().CodeTextPythonInHtml(),EXPECTED_PYTHON_CODE);
     }
 
 }
